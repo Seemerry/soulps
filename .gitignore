@@ -1,0 +1,154 @@
+# Soulp 海龟汤游戏平台 - Git Ignore 文件
+# ==============================================
+
+# 环境配置文件 (包含敏感信息 - 必须忽略)
+.env
+.env.*
+!.env.example
+
+# 依赖包目录
+/node_modules
+*/node_modules
+/.pnp
+.pnp.js
+.pnp.loader.mjs
+
+# 编译输出目录
+/build
+/dist
+*/build
+*/dist
+/dist-ssr
+
+# 日志文件
+*.log
+logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+/access.log
+/error.log
+
+# 测试覆盖率报告
+/coverage
+*/coverage
+*.lcov
+
+# 临时文件
+*.tmp
+*.temp
+*.cache
+.parcel-cache
+.nyc_output
+
+# 操作系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 编辑器配置
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# 运行时数据
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# 覆盖率目录
+lib-cov
+coverage
+.nyc_output
+
+# 构建工具
+.grunt
+/bower_components
+.lock-wscript
+build/Release
+jspm_packages/
+
+# TypeScript
+*.tsbuildinfo
+
+# 可选的 npm 缓存目录
+.npm
+
+# 可选的 eslint 缓存
+.eslintcache
+
+# 可选的 REPL 历史
+.node_repl_history
+
+# 输出的 npm 包
+*.tgz
+
+# Yarn 完整性文件
+.yarn-integrity
+
+# dotenv 环境变量文件
+.env.test
+
+# parcel-bundler 缓存 (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# next.js 构建输出
+.next
+
+# nuxt.js 构建输出
+.nuxt
+
+# vuepress 构建输出
+.vuepress/dist
+
+# Serverless 目录
+.serverless
+
+# FuseBox 缓存
+.fusebox/
+
+# DynamoDB Local 文件
+.dynamodb/
+
+# TernJS 端口文件
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# IDE - WebStorm
+.idea/
+
+# IDE - Eclipse
+.project
+.classpath
+
+# IDE - NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# 备份文件
+*.bak
+*.backup
+*.orig

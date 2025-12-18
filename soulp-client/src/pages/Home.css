@@ -1,0 +1,220 @@
+/* Home.css - 为Home组件提供基础样式 */
+
+/* 布局结构 */
+.home-container {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f9fafb;
+}
+
+/* 导航栏 */
+.home-navbar {
+  background-color: #2C3E50;
+  color: white;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  z-index: 50;
+}
+
+.navbar-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 主内容区域 */
+.main-content {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+}
+
+.content-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* 标题栏 */
+.title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* 房间列表网格 */
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* 房间卡片 */
+.room-card {
+  display: block;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #eee;
+}
+
+.room-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* 用户菜单 */
+.user-menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  margin-top: 10px;
+  width: 220px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  color: #333;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.user-info {
+  position: relative;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4f46e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.user-info-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: background-color 0.2s;
+}
+
+.user-info-button:hover {
+  background-color: rgba(0,0,0,0.05);
+}
+
+.user-menu-header {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.user-menu-name {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.user-menu-id, .user-menu-account {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 3px;
+}
+
+.user-menu-item {
+  padding: 12px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.user-menu-item:hover {
+  background-color: rgba(0,0,0,0.05);
+}
+
+.user-menu-logout {
+  color: #e53e3e;
+}
+
+.user-menu-logout:hover {
+  background-color: rgba(229, 62, 62, 0.1);
+}
+
+/* 加载中动画 */
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  border: 3px solid rgba(230, 126, 34, 0.2);
+  border-radius: 50%;
+  border-top: 3px solid #E67E22;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 创建房间按钮 */
+.create-room-btn {
+  display: flex;
+  align-items: center;
+  background: #E67E22;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.create-room-btn:hover {
+  background: #D35400;
+}
+
+/* 模态框 */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.modal-container {
+  background: white;
+  border-radius: 0.75rem;
+  width: 100%;
+  max-width: 500px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+} 

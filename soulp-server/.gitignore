@@ -1,0 +1,96 @@
+# Soulp Server - Git Ignore 文件
+# ===============================
+
+# 环境配置文件 (包含敏感信息 - 必须忽略)
+.env
+.env.*
+!.env.example
+
+# 依赖包
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# 运行时数据
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# 日志文件
+logs
+*.log
+access.log
+error.log
+combined.log
+
+# 缓存目录
+.cache/
+.parcel-cache/
+
+# 临时文件
+*.tmp
+*.temp
+
+# 操作系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 编辑器配置
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.swp
+*.swo
+*~
+
+# 数据库文件
+*.sqlite
+*.db
+
+# SSL 证书文件
+*.pem
+*.key
+*.crt
+*.csr
+
+# 备份文件
+*.bak
+*.backup
+*.orig
+
+# PM2 配置 (如果不包含敏感信息可以保留)
+ecosystem.config.js
+
+# Webpack 构建输出
+dist/
+build/
+
+# 测试覆盖率
+coverage/
+.nyc_output/
+
+# JSHint/JSLint 缓存
+.jshintrc
+.jslint
+
+# ESLint 缓存
+.eslintcache
+
+# TypeScript 编译输出
+*.tsbuildinfo
+
+# Redis 快照文件 (如果在本地运行)
+dump.rdb
+
+# MySQL 数据文件 (如果有本地数据)
+*.sql
+data/
