@@ -504,7 +504,7 @@ A: 检查 `.env` 文件中的数据库配置是否正确
 
 ## 👥 作者
 
-- **开发者** - [Your Name](https://github.com/your-username)
+- **开发者** - [Seemerry](https://github.com/Seemerry)
 
 ## 🙏 致谢
 
